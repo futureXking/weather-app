@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fancy Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <div class="weather-card">
+      <h1>🌈 Weather App</h1>
+      <input type="text" id="cityInput" placeholder="Enter city..." oninput="getCitySuggestions()" autocomplete="off"/>
+      <ul id="suggestions"></ul>
+      <button onclick="getWeather()">Check</button>
+      <div id="weatherResult"></div>
+      <div id="forecastContainer"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    transition: background 0.5s ease;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app-container {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .weather-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4f46e5;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  
+  button:hover {
+    background-color: #4338ca;
+  }
+  
+  #weatherResult img {
+    width: 80px;
+  }
+  
+  #weatherResult {
+    margin-top: 20px;
+  }
+  
+  /* Suggestions */
+  ul#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    text-align: left;
+    max-height: 150px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: absolute;
+    width: 80%;
+    z-index: 10;
+    left: 10%;
+  }
+  
+  ul#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  ul#suggestions li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Forecast */
+  #forecastContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .forecast-card {
+    background: #f3f4f6;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .forecast-card img {
+    width: 40px;
+  }
+  
+  /* Weather-based backgrounds */
+  .sunny {
+    background: linear-gradient(135deg, #fddb92, #d1fdff);
+  }
+  
+  .cloudy {
+    background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+  }
+  
+  .rainy {
+    background: linear-gradient(135deg, #83a4d4, #b6fbff);
+  }
+  
+  .clear {
+    background: linear-gradient(135deg, #2980b9, #6dd5fa);
+  }
+  
+  .thunderstorm {
+    background: linear-gradient(135deg, #485563, #29323c);
+  }
+  
+  .snow {
+    background: linear-gradient(135deg, #e6dada, #274046);
+  }
+  
+  .mist {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  }
